@@ -2,19 +2,20 @@
 <html>
 <head>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
-	<title>HELLO</title>
-	<script type="text/javascript">
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+       <script type="text/javascript">
        	let img;
        	function setup(){
-       		createCanvas(800, 240);
+       		createCanvas(800, 1000);
        		background(100);
-       		img = loadImage('assets/emoji.png');
+       		img = loadImage('emoji.png');
+       		img.resize(100,100);
        	}
-		       	function draw(){
+       	function draw(){
        		image(img, 0, 0);
        	}
        </script>
+	<title></title>
 </head>
 <body>
 <p> hello world </p>
