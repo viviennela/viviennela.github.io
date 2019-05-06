@@ -5,10 +5,13 @@
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
        <script type="text/javascript">
        	let img;
+       	function preload(){
+       		img = loadImage('assets/emoji.png');
+       	}
        	function setup(){
        		createCanvas(800, 1000);
        		background(100);
-       		img = loadImage('assets/emoji.png');
+       		
        		img.resize(100,100);
        	}
        	function draw(){
