@@ -4,6 +4,16 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
        <script type="text/javascript">
+	         if (event.keyCode == 32) {
+    var canvas = document.getElementById('image-canvas');
+    canvas.innerHTML = '<img src="assets/emoji.png" />'
+  }
+}
+function keyUp(event) {
+  if (event.keyCode == 32) {
+    var canvas = document.getElementById('image-canvas');
+    canvas.innerHTML = 'img src';
+  }
        	let img;
        	function preload(){
        		img = loadImage('assets/emoji.png');
